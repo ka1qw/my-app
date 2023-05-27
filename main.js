@@ -8,7 +8,7 @@ import TileLayer from 'ol/layer/Tile.js';
 import View from 'ol/View.js';
 import {createStringXY} from 'ol/coordinate.js';
 
-var isOnDiv = true
+var isOnDiv = false
 
 const apiKey = 'ab100b3c34d56fbee867f2177e35e827'
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&lang=ru&'
