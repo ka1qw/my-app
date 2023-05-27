@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mouse Position</title>
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <style>
+      .map {
+        width: 100%;
+        height: 550px;
+      }
+
+       .prec_class {
+        position: absolute;
+        top: 100px;
+        left: 5px;
+        font-size: 2rem;
+      }
+       .wind_class {
+        position: absolute;
+        top: 150px;
+        left: 5px;
+        font-size: 2rem;
+      }
+       .pressure_class {
+        position: absolute;
+        top: 200px;
+        left: 5px;
+        font-size: 2rem;
+      }
+       .temp_class {
+        position: absolute;
+        top: 250px;
+        left: 5px;
+        font-size: 2rem;
+      }
+
+      .check-box{
+        width: 1.5em;
+        height: 1.5em;
+      }
+
+      p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="map" class="map"></div>
+    <div id="mouse-position"></div>
+    
+    <div class="weather">
+      <h2 class="city"></h2>
+      <p class="temp"></p>
+      <p class="humidity"></p>
+      <p class="wind"></p>
+    </div>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="main.js"></script>
+    
+    <label >
+      <input class ='check-box' type="checkbox" id="temperature">
+    </label>
+    <label >
+      <input class ='check-box' type="checkbox" id="wind">
+    </label>
+    <label >
+      <input class ='check-box' type="checkbox" id="prec">
+    </label>
+    <label >
+      <input class ='check-box' type="checkbox" id="pressure">
+    </label>
+
+   
+   
+  </body>
+</html>
